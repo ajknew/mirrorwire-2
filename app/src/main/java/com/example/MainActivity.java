@@ -383,7 +383,7 @@ public class MainActivity extends AppCompatActivity implements
         filter.addAction(ACTION_USB_PERMISSION);
         filter.addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED);
         filter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED);
-        registerReceiver(mUsbReceiver, filter);
+        ContextCompat.registerReceiver(this, mUsbReceiver, filter, ContextCompat.RECEIVER_NOT_EXPORTED);
     }
 
     private void checkAndConnectUsbDevice() {
@@ -412,7 +412,8 @@ public class MainActivity extends AppCompatActivity implements
                 Integer.toHexString(device.getVendorId()));
         updateStatusBadge("AWAITING PERMISSION", "#F59E0B");
 
-        int flags = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) ? PendingIntent.FLAG_MUTABLE : 0;
+        int flags = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) ?
+                (PendingIntent.FLAG_MUTABLE | PendingIntent.FLAG_UPDATE_CURRENT) : PendingIntent.FLAG_UPDATE_CURRENT;
         PendingIntent pi = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), flags);
         mUsbManager.requestPermission(device, pi);
     }
