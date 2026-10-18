@@ -1,0 +1,6 @@
+{
+  "name": "MirrorWire V2",
+  "description": "USB OTG ADB Screen Mirroring with H.264 hardware decoding, host camera overlay, and layout presets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

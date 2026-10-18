@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MirrorWire V2</string>
+    <string name="title_app">MIRRORWIRE V2 — USB OTG SCREEN MIRRORING</string>
+    <string name="desc_sub">USB OTG Host ADB Screen Mirroring &amp; Camera Overlay</string>
+    
+    <!-- Status Labels -->
+    <string name="status_usb_disconnected">USB Disconnected</string>
+    <string name="status_usb_detected">USB Device Detected</string>
+    <string name="status_usb_permission_pending">Awaiting USB Permission</string>
+    <string name="status_usb_permission_denied">USB Permission Denied</string>
+    <string name="status_adb_initializing">Initializing ADB Handshake...</string>
+    <string name="status_adb_auth_required">ADB Auth Required on Client Device</string>
+    <string name="status_adb_ready">ADB Connected &amp; Ready</string>
+    <string name="status_streaming_starting">Starting Screenrecord...</string>
+    <string name="status_streaming_active">Mirror Stream Active</string>
+    <string name="status_decoder_active">Hardware Decoder Running</string>
+    <string name="status_displaying_frames">Displaying Live Frames</string>
+    <string name="status_stopped">Mirroring Stopped</string>
+    <string name="status_error">Error Encountered</string>
+    
+    <!-- Actions -->
+    <string name="action_start">START MIRROR</string>
+    <string name="action_stop">STOP MIRROR</string>
+    <string name="action_live_mirror">LIVE MIRROR</string>
+    <string name="action_settings">PENGATURAN CAPTURE</string>
+    <string name="action_audio_toggle">AUDIO ON/OFF</string>
+    <string name="action_layout_preset">PRESET LAYOUT</string>
+    <string name="action_copy_log">COPY LOG</string>
+    <string name="action_clear_log">CLEAR LOG</string>
+    <string name="action_switch_camera">SWITCH CAM</string>
+    <string name="action_lock_overlay">LOCK OVERLAY</string>
+    <string name="action_unlock_overlay">UNLOCK OVERLAY</string>
+    <string name="action_toggle_camera">CAMERA ON/OFF</string>
+</resources>
